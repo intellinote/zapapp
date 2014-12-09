@@ -1,0 +1,22 @@
+{
+  "access_token": {
+    "label": "Access Token", 
+    "required": true, 
+    "help_text": null, 
+    "default": null, 
+    "choices": null, 
+    "sort": null, 
+    "type": "Unicode", 
+    "input_format": null
+  }, 
+  "refresh_token": {
+    "label": "Refresh Token", 
+    "required": true, 
+    "help_text": null, 
+    "default": null, 
+    "choices": null, 
+    "sort": null, 
+    "type": "Unicode", 
+    "input_format": null
+  }
+}
