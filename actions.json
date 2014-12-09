@@ -1,0 +1,420 @@
+{
+  "add_reply_to_task": {
+    "label": "Add Comment to Task", 
+    "help_text": "Adds a new comment to the specified task.", 
+    "noun": "Comment", 
+    "important": false, 
+    "hide": false, 
+    "resource_url": "https://api.intellinote.net/rest/v2.0/org/{{org_id}}/workspace/{{workspace_id}}/note/{{task_id}}/reply", 
+    "custom_fields_url": null, 
+    "fields": {
+      "org_id": {
+        "label": "Organization", 
+        "required": true, 
+        "help_text": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": null, 
+        "type_of": "Integer", 
+        "prefill": "new_organization.org_id.name", 
+        "send_in_json": false
+      }, 
+      "workspace_id": {
+        "label": "Workspace", 
+        "required": true, 
+        "help_text": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 1, 
+        "type_of": "Integer", 
+        "prefill": "new_workspace.workspace_id.name", 
+        "send_in_json": false
+      }, 
+      "task_id": {
+        "label": "Task", 
+        "required": true, 
+        "help_text": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 2, 
+        "type_of": "Integer", 
+        "prefill": "new_task.note_id.title", 
+        "send_in_json": false
+      }, 
+      "body": {
+        "label": "Body", 
+        "required": true, 
+        "help_text": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 3, 
+        "type_of": "Textarea", 
+        "prefill": null, 
+        "send_in_json": true
+      }
+    }
+  }, 
+  "add_tag_to_note": {
+    "label": "Add Tag to Note", 
+    "help_text": "Adds a tag to the specified note.", 
+    "noun": "Tag", 
+    "important": false, 
+    "hide": true, 
+    "resource_url": "https://api.intellinote.net/rest/v2.0/org/{{org_id}}/workspace/{{workspace_id}}/note/{{note_id}}/tag/{{tag_id}}", 
+    "custom_fields_url": null, 
+    "fields": {
+      "org_id": {
+        "label": "Organization", 
+        "required": true, 
+        "help_text": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": null, 
+        "type_of": "Integer", 
+        "prefill": "new_organization.org_id.name", 
+        "send_in_json": false
+      }, 
+      "workspace_id": {
+        "label": "Workspace", 
+        "required": true, 
+        "help_text": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 1, 
+        "type_of": "Integer", 
+        "prefill": "new_workspace.workspace_id.name", 
+        "send_in_json": false
+      }, 
+      "note_id": {
+        "label": "Note", 
+        "required": true, 
+        "help_text": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 2, 
+        "type_of": "Integer", 
+        "prefill": "new_note.note_id.title", 
+        "send_in_json": false
+      }, 
+      "tag_id": {
+        "label": "Tag", 
+        "required": true, 
+        "help_text": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 3, 
+        "type_of": "Integer", 
+        "prefill": "new_tag.tag_id.label", 
+        "send_in_json": false
+      }
+    }
+  }, 
+  "add_tag_to_task": {
+    "label": "Add Tag to Task", 
+    "help_text": "Adds a tag to the specified task.", 
+    "noun": "Tag", 
+    "important": false, 
+    "hide": true, 
+    "resource_url": "https://api.intellinote.net/rest/v2.0/org/{{org_id}}/workspace/{{workspace_id}}/note/{{task_id}}/tag/{{tag_id}}", 
+    "custom_fields_url": null, 
+    "fields": {
+      "org_id": {
+        "label": "Organization", 
+        "required": true, 
+        "help_text": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": null, 
+        "type_of": "Integer", 
+        "prefill": "new_organization.org_id.name", 
+        "send_in_json": false
+      }, 
+      "workspace_id": {
+        "label": "Workspace", 
+        "required": true, 
+        "help_text": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 1, 
+        "type_of": "Integer", 
+        "prefill": "new_workspace.workspace_id.name", 
+        "send_in_json": false
+      }, 
+      "task_id": {
+        "label": "Task", 
+        "required": true, 
+        "help_text": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 2, 
+        "type_of": "Integer", 
+        "prefill": "new_task.note_id.title", 
+        "send_in_json": false
+      }, 
+      "tag_id": {
+        "label": "Tag", 
+        "required": true, 
+        "help_text": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 3, 
+        "type_of": "Integer", 
+        "prefill": "new_tag.tag_id.label", 
+        "send_in_json": false
+      }
+    }
+  }, 
+  "create_note": {
+    "label": "Create Note", 
+    "help_text": "Creates a new note in the specified workspace.", 
+    "noun": "Note", 
+    "important": true, 
+    "hide": false, 
+    "resource_url": "https://api.intellinote.net/rest/v2.0/org/{{org_id}}/workspace/{{workspace_id}}/note", 
+    "custom_fields_url": null, 
+    "fields": {
+      "org_id": {
+        "label": "Organization", 
+        "required": true, 
+        "help_text": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": null, 
+        "type_of": "Integer", 
+        "prefill": "new_organization.org_id.name", 
+        "send_in_json": false
+      }, 
+      "workspace_id": {
+        "label": "Workspace", 
+        "required": true, 
+        "help_text": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 1, 
+        "type_of": "Integer", 
+        "prefill": "new_workspace.workspace_id.name", 
+        "send_in_json": false
+      }, 
+      "title": {
+        "label": "Title", 
+        "required": true, 
+        "help_text": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 2, 
+        "type_of": "Unicode", 
+        "prefill": null, 
+        "send_in_json": true
+      }, 
+      "body": {
+        "label": "Body", 
+        "required": false, 
+        "help_text": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 3, 
+        "type_of": "Textarea", 
+        "prefill": null, 
+        "send_in_json": true
+      }, 
+      "tags": {
+        "label": "Tags", 
+        "required": false, 
+        "help_text": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 4, 
+        "type_of": "Unicode", 
+        "prefill": null, 
+        "send_in_json": true
+      }
+    }
+  }, 
+  "create_reply_to_note": {
+    "label": "Add Comment to Note", 
+    "help_text": "Adds a new comment to the specified note.", 
+    "noun": "Comment", 
+    "important": false, 
+    "hide": false, 
+    "resource_url": "https://api.intellinote.net/rest/v2.0/org/{{org_id}}/workspace/{{workspace_id}}/note/{{note_id}}/reply", 
+    "custom_fields_url": null, 
+    "fields": {
+      "org_id": {
+        "label": "Organization", 
+        "required": true, 
+        "help_text": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": null, 
+        "type_of": "Integer", 
+        "prefill": "new_organization.org_id.name", 
+        "send_in_json": false
+      }, 
+      "workspace_id": {
+        "label": "Workspace", 
+        "required": true, 
+        "help_text": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 1, 
+        "type_of": "Integer", 
+        "prefill": "new_workspace.workspace_id.name", 
+        "send_in_json": false
+      }, 
+      "note_id": {
+        "label": "Note", 
+        "required": true, 
+        "help_text": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 2, 
+        "type_of": "Integer", 
+        "prefill": "new_note.note_id.title", 
+        "send_in_json": false
+      }, 
+      "body": {
+        "label": "Body", 
+        "required": true, 
+        "help_text": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 3, 
+        "type_of": "Textarea", 
+        "prefill": null, 
+        "send_in_json": true
+      }
+    }
+  }, 
+  "create_task": {
+    "label": "Create Task", 
+    "help_text": "Creates a new task within the specified workspace.", 
+    "noun": "Task", 
+    "important": true, 
+    "hide": false, 
+    "resource_url": "https://api.intellinote.net/rest/v2.0/org/{{org_id}}/workspace/{{workspace_id}}/note", 
+    "custom_fields_url": null, 
+    "fields": {
+      "org_id": {
+        "label": "Organization", 
+        "required": true, 
+        "help_text": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": null, 
+        "type_of": "Integer", 
+        "prefill": "new_organization.org_id.name", 
+        "send_in_json": false
+      }, 
+      "workspace_id": {
+        "label": "Workspace", 
+        "required": true, 
+        "help_text": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 1, 
+        "type_of": "Integer", 
+        "prefill": "new_workspace.workspace_id.name", 
+        "send_in_json": false
+      }, 
+      "title": {
+        "label": "Title", 
+        "required": true, 
+        "help_text": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 2, 
+        "type_of": "Unicode", 
+        "prefill": null, 
+        "send_in_json": true
+      }, 
+      "body": {
+        "label": "Body", 
+        "required": false, 
+        "help_text": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 3, 
+        "type_of": "Textarea", 
+        "prefill": null, 
+        "send_in_json": true
+      }, 
+      "assignee__user_id": {
+        "label": "Assignee", 
+        "required": false, 
+        "help_text": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 4, 
+        "type_of": "Unicode", 
+        "prefill": "new_user_in_workspace.user_id.full_name_family_given", 
+        "send_in_json": true
+      }, 
+      "due": {
+        "label": "Due Date", 
+        "required": false, 
+        "help_text": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 5, 
+        "type_of": "DateTime", 
+        "prefill": null, 
+        "send_in_json": true
+      }, 
+      "tags": {
+        "label": "Tags", 
+        "required": false, 
+        "help_text": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": 6, 
+        "type_of": "Unicode", 
+        "prefill": null, 
+        "send_in_json": true
+      }
+    }
+  }, 
+  "create_workspace": {
+    "label": "Create Workspace", 
+    "help_text": "Creates a new workspace in the specified organization.", 
+    "noun": "Workspace", 
+    "important": false, 
+    "hide": false, 
+    "resource_url": "https://api.intellinote.net/rest/v2.0/org/{{org_id}}/workspace", 
+    "custom_fields_url": null, 
+    "fields": {
+      "org_id": {
+        "label": "Organization", 
+        "required": true, 
+        "help_text": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": null, 
+        "type_of": "Integer", 
+        "prefill": "new_organization.org_id.name", 
+        "send_in_json": false
+      }, 
+      "name": {
+        "label": "Name", 
+        "required": true, 
+        "help_text": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": null, 
+        "type_of": "Unicode", 
+        "prefill": null, 
+        "send_in_json": true
+      }, 
+      "description": {
+        "label": "Description", 
+        "required": false, 
+        "help_text": null, 
+        "default": null, 
+        "choices": null, 
+        "sort": null, 
+        "type_of": "Textarea", 
+        "prefill": null, 
+        "send_in_json": true
+      }
+    }
+  }
+}
