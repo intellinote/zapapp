@@ -1,7 +1,7 @@
 {
   "add_reply_to_task": {
     "label": "Add Comment to Task", 
-    "help_text": "Adds a new comment to the specified task.", 
+    "help_text": "Adds a new comment to a specified task.", 
     "noun": "Comment", 
     "important": false, 
     "hide": false, 
@@ -166,7 +166,7 @@
   }, 
   "create_note": {
     "label": "Create Note", 
-    "help_text": "Creates a new note in the specified workspace.", 
+    "help_text": "Creates a new note in a specified workspace.", 
     "noun": "Note", 
     "important": true, 
     "hide": false, 
@@ -232,7 +232,7 @@
   }, 
   "create_reply_to_note": {
     "label": "Add Comment to Note", 
-    "help_text": "Adds a new comment to the specified note.", 
+    "help_text": "Adds a new comment to a specified note.", 
     "noun": "Comment", 
     "important": false, 
     "hide": false, 
@@ -287,7 +287,7 @@
   }, 
   "create_task": {
     "label": "Create Task", 
-    "help_text": "Creates a new task within the specified workspace.", 
+    "help_text": "Creates a new task within a specified workspace.", 
     "noun": "Task", 
     "important": true, 
     "hide": false, 
@@ -375,7 +375,7 @@
   }, 
   "create_workspace": {
     "label": "Create Workspace", 
-    "help_text": "Creates a new workspace in the specified organization.", 
+    "help_text": "Creates a new workspace in a specified organization.", 
     "noun": "Workspace", 
     "important": false, 
     "hide": false, 
