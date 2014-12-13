@@ -581,7 +581,7 @@
     "important": true,
     "hide": false,
     "data_source": "Polling",
-    "resource_url": "https://api.intellinote.net/rest/v2.0/org/{{org_id}}/workspace/{{workspace_id}}/notes?note_type=TASK&full_text=true&tagged={{tagged}}&include_complete={{include_complete}}&assignee={{assignee}}&creator={{creator}}",
+    "resource_url": "https://api.intellinote.net/rest/v2.0/org/{{org_id}}/notes?note_type=TASK&full_text=true&tagged={{tagged}}&include_complete={{ic}}&assignee={{assignee}}&creator={{creator}}&workspace={{workspace_id}}",
     "custom_fields_url": null,
     "hook_event": null,
     "hook_static_directions": "Log into your service and paste the below URL into the webhook setup field.",
@@ -687,7 +687,7 @@
         "type": "Unicode",
         "prefill": "new_tag_in_organization.label.label"
       },
-      "include_complete": {
+      "ic": {
         "label": "Include Completed Tasks?",
         "required": false,
         "help_text": "Indicates whether to include completed tasks, incomplete tasks or both.",
