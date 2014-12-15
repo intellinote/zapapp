@@ -1,10 +1,10 @@
 {
-  "title": "Intellinote Cloned 2014-12-11",
-  "description": "Intellinote is a multi-platform (web, mobile, and tablet) application that helps businesses of all sizes capture, collaborate and complete work, quickly and easily.",
-  "image_url": "https://zapier.cachefly.net/storage/developer/1780416618cc6fa63efcc930de9737df.png",
-  "test_trigger_key": "ping_authed",
-  "auth_type": "OAuth V2 (w/refresh)",
-  "auth_mapping": {},
-  "subscribe_url": "",
+  "title": "Intellinote", 
+  "description": "Intellinote is a multi-platform (web, mobile, and tablet) application that helps businesses of all sizes capture, collaborate and complete work, quickly and easily.", 
+  "image_url": "https://zapier.cachefly.net/storage/developer/1780416618cc6fa63efcc930de9737df.png", 
+  "test_trigger_key": "ping_authed", 
+  "auth_type": "OAuth V2 (w/refresh)", 
+  "auth_mapping": {}, 
+  "subscribe_url": "", 
   "unsubscribe_url": ""
 }
