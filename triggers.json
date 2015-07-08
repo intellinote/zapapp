@@ -851,7 +851,7 @@
     }
   },
   "new_user_in_workspace": {
-    "label": "Member added to Workspace", 
+    "label": "User added to Workspace", 
     "help_text": "Triggers when a new user is added to the specified workspace.",
     "noun": "User",
     "important": false,
