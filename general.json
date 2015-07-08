@@ -1,7 +1,7 @@
 {
   "title": "Intellinote", 
   "description": "Intellinote is a multi-platform (web, mobile, and tablet) application that helps businesses of all sizes capture, collaborate and complete work, quickly and easily.", 
-  "image_url": "https://zapier.cachefly.net/storage/developer/1780416618cc6fa63efcc930de9737df.png", 
+  "image_url": "https://zapier.cachefly.net/storage/developer/6a4ef7995c1f9f0c7dc36072758f226b_2.png", 
   "test_trigger_key": "ping_authed", 
   "auth_type": "OAuth V2 (w/refresh)", 
   "auth_mapping": {}, 
