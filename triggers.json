@@ -1,4 +1,84 @@
 {
+  "new_chat": {
+    "label": "New Chat",
+    "help_text": "Triggers when a new chat message is created.",
+    "noun": "Message",
+    "important": true,
+    "hide": false,
+    "data_source": "Polling",
+    "resource_url": "https://api.intellinote.net/rest/v2/org/{{org_id}}/notes?note_type=CHAT&full_text=true&workspace={{workspace_id}}&creator={{creator}}",
+    "custom_fields_url": null,
+    "hook_event": null,
+    "hook_static_directions": "Log into your service and paste the below URL into the webhook setup field.",
+    "sample_result_fields": [
+      {
+        "important": true,
+        "type": "unicode",
+        "key": "body",
+        "label": "Message"
+      },
+      {
+        "important": true,
+        "type": "unicode",
+        "key": "creator__family_name",
+        "label": "Last Name (Creator)"
+      },
+      {
+        "important": true,
+        "type": "unicode",
+        "key": "creator__given_name",
+        "label": "First Name (Creator)"
+      },
+      {
+        "type": "unicode",
+        "key": "creator__user_id",
+        "label": "User Identifier (Creator)"
+      },
+      {
+        "type": "int",
+        "key": "note_id",
+        "label": "Message Identifier"
+      },
+      {
+        "important": true,
+        "type": "bool",
+        "key": "viewed",
+        "label": "Read?"
+      }
+    ],
+    "fields": {
+      "org_id": {
+        "label": "Organization",
+        "required": true,
+        "help_text": null,
+        "default": null,
+        "choices": null,
+        "sort": null,
+        "type": "Integer",
+        "prefill": "new_organization.org_id.name"
+      },
+      "workspace_id": {
+        "label": "Workspace",
+        "required": false,
+        "help_text": null,
+        "default": null,
+        "choices": null,
+        "sort": 1,
+        "type": "Integer",
+        "prefill": "new_workspace.workspace_id.name"
+      },
+      "creator": {
+        "label": "Created By",
+        "required": false,
+        "help_text": null,
+        "default": null,
+        "choices": null,
+        "sort": 2,
+        "type": "Unicode",
+        "prefill": "new_user_in_organization.user_id.full_name_family_given"
+      }
+    }
+  },
   "new_note": {
     "label": "New Note",
     "help_text": "Triggers when a new note is created.",
