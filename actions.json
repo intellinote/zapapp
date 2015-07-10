@@ -533,7 +533,7 @@
     "noun": "Message", 
     "important": true, 
     "hide": false, 
-    "resource_url": "https://api.intellinote.net/rest/v2/org/{{org_id}}/workspace/{{workspace_id}}/note", 
+    "resource_url": "https://api.intellinote.net/rest/v2/org/{{org_id}}/workspace/{{workspace_id}}/message", 
     "custom_fields_url": null, 
     "fields": {
       "org_id": {
